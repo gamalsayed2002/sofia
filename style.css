@@ -51,7 +51,7 @@ ul {
   --black: #1e1e1e;
   --section-bg: #d9d9d9;
   --sec-section-bg: #333;
-  --main-color: #f15a1f;
+  --main-color: #ff7a38;
   --secion-padding: 50px 0;
 }
 
@@ -111,7 +111,7 @@ header .first-header ul li a img {
 }
 
 header nav {
-  background-color: var(--main-color);
+  background-color: #ff723e;
   align-items: center;
   padding: 30px 0;
   /* position: fixed;
@@ -218,7 +218,23 @@ main .swiper-slide {
   color: var(--main-color) !important;
   font-weight: 800 !important;
 }
+main .swiper-slide .slide-contaienr {
 
+
+}
+main .swiper-slide .slide-contaienr .content {
+ 
+}
+main .swiper-slide .slide-contaienr .content h3 {
+}
+main .swiper-slide .slide-contaienr .content p {
+}
+main .swiper-slide .slide-contaienr .img_contaienr {
+
+}
+main .swiper-slide .slide-contaienr .img_contaienr img {
+  width: 100%;
+}
 /* start who we are section */
 #who-we-are {
   padding: var(--secion-padding);

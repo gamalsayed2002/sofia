@@ -3,10 +3,10 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 });
 // wow
 new WOW().init();
@@ -26,8 +26,6 @@ window.addEventListener("scroll", () => {
     nav.style.zIndex = "500";
   } else {
     nav.style.position = "";
-    nav.style.top="";
-    
   }
 });
 // when i click on nav item nav disapper
