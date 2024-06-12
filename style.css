@@ -52,7 +52,7 @@ ul {
   --section-bg: #d9d9d9;
   --sec-section-bg: #333;
   --main-color: #ff7a38;
-  --secion-padding: 50px 0;
+  --secion-padding: 50px 30px;
 }
 
 /* start flex classes */
@@ -218,22 +218,39 @@ main .swiper-slide {
   color: var(--main-color) !important;
   font-weight: 800 !important;
 }
-main .swiper-slide .slide-contaienr {
+main .slide-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 38px;
+}
+main .slide-container .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+main .slide-container .img img {
+  object-fit: cover;
+  min-width: 300px;
+  height: 400px;
+}
 
-
+main .slide-container .content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-main .swiper-slide .slide-contaienr .content {
- 
+main .slide-container .content h3 {
 }
-main .swiper-slide .slide-contaienr .content h3 {
-}
-main .swiper-slide .slide-contaienr .content p {
-}
-main .swiper-slide .slide-contaienr .img_contaienr {
-
-}
-main .swiper-slide .slide-contaienr .img_contaienr img {
-  width: 100%;
+@media (max-width: 715px) {
+  main .slide-container {
+    padding: 0 40px;
+  }
+  main .slide-container .img {
+    display: none;
+  }
 }
 /* start who we are section */
 #who-we-are {
