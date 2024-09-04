@@ -164,7 +164,7 @@ main .main-nav .mobile {
     border-radius: 2px;
     transition: 0.5s all;
   }
-  main .main-nav .mobile .menu div.active-one.active-two{
+  main .main-nav .mobile .menu div.active-one.active-two {
     margin-right: 14px;
     background-color: var(--main-color);
   }
@@ -379,7 +379,7 @@ main .main-nav .mobile {
 }
 .questions .container .accordion .box.active-accordion .content {
   padding: 10px;
-  height: 70px;
+  height: 100px;
 }
 .questions .container .accordion .box.active-accordion .label::after {
   content: "-";

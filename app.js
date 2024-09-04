@@ -25,10 +25,10 @@ let nav = document.querySelector(".main-nav").querySelectorAll("a");
 nav.forEach((e) => {
   e.addEventListener("click", () => {
     ul.classList.remove("show");
+    activeOne.classList.remove("active-two");
   });
 });
 menu.addEventListener("click", () => {
   ul.classList.toggle("show");
   activeOne.classList.toggle("active-two");
-
 });
