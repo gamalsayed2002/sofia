@@ -16,3 +16,19 @@ for (i = 0; i < accordion.length; i++) {
 //     this.classList.toggle("active-accordion");
 //   });
 // });
+// start menu
+let menu = document.getElementById("menu");
+let ul = document.getElementById("ul");
+let activeOne = document.getElementById("active-one");
+let nav = document.querySelector(".main-nav").querySelectorAll("a");
+
+nav.forEach((e) => {
+  e.addEventListener("click", () => {
+    ul.classList.remove("show");
+  });
+});
+menu.addEventListener("click", () => {
+  ul.classList.toggle("show");
+  activeOne.classList.toggle("active-two");
+
+});
