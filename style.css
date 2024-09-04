@@ -9,6 +9,7 @@ html {
 }
 body {
   background: #d9d9d9;
+
 }
 :root {
   --main-color: #ff723e;
@@ -19,7 +20,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+section {
+  padding: 70px 20px !important;
+}
 /* start header */
 .header {
   background-color: white;
@@ -154,7 +157,6 @@ main .img {
 }
 /* start who we are section */
 .who_we_are {
-  padding: 50px 20px;
 }
 .who_we_are .container {
   display: flex;
@@ -208,7 +210,6 @@ main .img {
 }
 /* start why us section */
 .why_us {
-  padding-top: 70px;
   background: rgba(0 0 0 / 40%);
   position: relative;
 }
@@ -218,6 +219,7 @@ main .img {
   height: 100%;
   z-index: -1;
   top: 0;
+  left: 0;
 }
 .why_us .special {
   width: fit-content;
@@ -229,7 +231,7 @@ main .img {
 }
 .why_us .container {
   width: 100%;
-  padding: 50px 20px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,4 +270,93 @@ main .img {
   text-align: center;
   line-height: 1.6;
   font-weight: bold;
+}
+/* start media */
+@media (max-width: 650px) {
+  .why_us .container .box {
+    width: 400px;
+  }
+}
+/* start questions */
+.questions {
+}
+.questions .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions .container .img {
+  width: 50%;
+}
+
+.questions .container .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.questions .container .accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 700px;
+}
+.questions .container .accordion .box {
+  width: 500px;
+  max-width: 95%;
+  position: relative;
+}
+.questions .container .accordion .box .label {
+  position: relative;
+  padding: 10px;
+  background: var(--main-color);
+  color: white;
+  cursor: pointer;
+  direction: rtl;
+}
+.questions .container .accordion .box .label::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-size: 1.5em;
+}
+.questions .container .accordion .box .content {
+  background-color: white;
+  height: 0px;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: 0.5s all ease-in-out;
+  direction: rtl;
+}
+
+.questions .container .accordion .box .content::-webkit-scrollbar {
+  width: 0;
+}
+.questions .container .accordion .box.active-accordion .content {
+  padding: 10px;
+  height: 70px;
+}
+.questions .container .accordion .box.active-accordion .label::after {
+  content: "-";
+}
+/* start media */
+@media (max-width: 1000px) {
+  .questions .container .accordion .box {
+    width: 400px;
+  }
+  .questions .container .img {
+    width: 70%;
+  }
+}
+@media (max-width: 780px) {
+  .questions .container .img {
+    display: none;
+  }
+  .questions .container .accordion .box {
+    width: 700px;
+    max-width: 95%;
+  }
 }
