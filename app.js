@@ -32,3 +32,4 @@ menu.addEventListener("click", () => {
   ul.classList.toggle("show");
   activeOne.classList.toggle("active-two");
 });
+new WOW().init();

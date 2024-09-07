@@ -475,6 +475,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background: black;
+  color: white;
 }
 footer h3 {
   font-weight: bold;
