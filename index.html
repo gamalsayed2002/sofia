@@ -349,20 +349,21 @@
     </section>
     <section id="contact" class="contact">
       <img src="./imgs/contact.jpeg" alt="" class="bg" />
-      <form action="">
+      <div class="form" action="" id="form" ">
         <div class="logo">
           <img src="./imgs/logo.png" alt="" />
         </div>
         <div class="inputs">
-          <input type="text" placeholder="الاسم" /><input
+          <input type="text" placeholder="الاسم" id="name" /><input
             type="number"
             placeholder="رقم التواصل"
-          /><input type="email" placeholder="الاميل" />
+            id="phone"
+          /><input type="email" placeholder="الإيميل" id="email" />
 
-          <textarea placeholder="اترك رسالتك"></textarea>
-          <button type="submit">إرسال</button>
+          <textarea placeholder="اترك رسالتك" id="message"></textarea>
+          <button type="submit" id="button" onclick="sendMail()">إرسال</button>
         </div>
-      </form>
+      </div>
     </section>
 
     <footer>
@@ -389,7 +390,17 @@
         "max-glare": 1,
       });
     </script>
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- wow js -->
     <script src="./wow js/wow.min.js"></script>
+<!-- sweet alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- main -->
     <script src="app.js"></script>
   </body>
 </html>

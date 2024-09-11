@@ -36,7 +36,7 @@ section {
 main {
   position: relative;
   height: 100vh;
-  background: rgba(0 0 0 / 40%);
+  background: rgba(0 0 0 / 60%);
 }
 
 main .main-nav {
@@ -420,7 +420,7 @@ main .main-nav .mobile {
   top: 0;
   z-index: -1;
 }
-.contact form {
+.contact .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -433,14 +433,14 @@ main .main-nav .mobile {
   padding: 15px;
   box-shadow: 0 0.2px 3px white;
 }
-.contact form .logo {
+.contact .form .logo {
   width: 200px;
 }
-.contact form .logo img {
+.contact .form .logo img {
   width: 100%;
   height: 100%;
 }
-.contact form .inputs {
+.contact .form .inputs {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -448,7 +448,7 @@ main .main-nav .mobile {
   align-items: center;
   gap: 30px;
 }
-.contact form .inputs input {
+.contact .form .inputs input {
   width: 500px;
   max-width: 100%;
   padding: 10px 15px;
@@ -458,9 +458,9 @@ main .main-nav .mobile {
   font-size: 18px;
   direction: rtl;
 }
-.contact form .inputs input::placeholder {
+.contact .form .inputs input::placeholder {
 }
-.contact form .inputs textarea {
+.contact .form .inputs textarea {
   resize: none;
   width: 500px;
   max-width: 100%;
@@ -472,10 +472,10 @@ main .main-nav .mobile {
   font-size: 18px;
   direction: rtl;
 }
-.contact form .inputs textarea::-webkit-scrollbar {
+.contact .form .inputs textarea::-webkit-scrollbar {
   width: 0;
 }
-.contact form .inputs button {
+.contact .form .inputs button {
   outline: none;
   border: none;
   color: var(--main-color);
