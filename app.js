@@ -8,14 +8,6 @@ for (i = 0; i < accordion.length; i++) {
   });
 }
 
-// accordion.forEach((e) => {
-//   e.addEventListener("click", function () {
-//     accordion.forEach((e) => {
-//       e.classList.remove("active-accordion");
-//     });
-//     this.classList.toggle("active-accordion");
-//   });
-// });
 // start menu
 let menu = document.getElementById("menu");
 let ul = document.getElementById("ul");
@@ -33,6 +25,7 @@ menu.addEventListener("click", () => {
   activeOne.classList.toggle("active-two");
 });
 new WOW().init();
+// ////////////////////////////////////////////////////
 // email js
 // emailjs.init("BHPWqZaqxG6tCDcnE");
 emailjs.init("qH1rBr6KP0DO8XSJq");
@@ -58,3 +51,34 @@ function sendMail() {
     phone = document.getElementById("phone").value = "";
   });
 }
+//  swiper js
+
+var swiper = new Swiper(".mySwiper", {
+  breakpoints: {
+    // when window width is >= 200px
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
