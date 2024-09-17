@@ -323,7 +323,7 @@ main .main-nav .mobile {
 /* start our services */
 
 #our_services {
-  height: 100vh;
+
 }
 #our_services h3 {
   width: fit-content;
@@ -348,6 +348,7 @@ main .main-nav .mobile {
   gap: 20px;
   background: #fff;
   border-radius: 5px;
+  margin-bottom: 40px;
 
 height: 400px;
   padding: 10px;
