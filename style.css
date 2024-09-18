@@ -135,7 +135,7 @@ main .main-nav .mobile {
 }
 /* start media */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   main .content .info {
     flex-direction: column;
     gap: 10px;
@@ -283,7 +283,7 @@ main .main-nav .mobile {
 .why_us .container .box {
   width: 280px;
   max-width: 95%;
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
 
