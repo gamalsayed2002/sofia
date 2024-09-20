@@ -57,13 +57,22 @@ main .main-nav ul {
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  gap: 20px;
+  gap: 10px;
 }
 main .main-nav ul li {
   height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .main-nav ul li a.lang {
+  background: var(--main-color);
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+main .main-nav ul li a.lang:hover {
+  color: black;
 }
 main .main-nav ul li a {
   height: inherit;
@@ -73,6 +82,13 @@ main .main-nav ul li a {
   color: whitesmoke;
   font-weight: 700;
   font-size: 20px;
+  height: auto;
+  padding: 10px;
+  transition: 0.5s;
+}
+main .main-nav ul li a:hover {
+  border-radius: 5px;
+  background-color: var(--main-color);
 }
 main .content {
   width: 100%;
@@ -133,6 +149,7 @@ main .img {
 main .main-nav .mobile {
   display: none;
 }
+
 /* start media */
 
 @media (max-width: 800px) {
@@ -172,10 +189,15 @@ main .main-nav .mobile {
     width: 50px;
   }
   main .main-nav ul li {
-    height: 35px;
+    height: 50px;
   }
   main .main-nav ul li a {
     font-size: 30px;
+  }
+
+  main .main-nav ul li a.lang {
+    background: white;
+    color: var(--main-color);
   }
   main .main-nav ul {
     height: 100vh;
@@ -323,7 +345,6 @@ main .main-nav .mobile {
 /* start our services */
 
 #our_services {
-
 }
 #our_services h3 {
   width: fit-content;
@@ -350,7 +371,7 @@ main .main-nav .mobile {
   border-radius: 5px;
   margin-bottom: 40px;
 
-height: 400px;
+  height: 400px;
   padding: 10px;
   overflow: scroll;
 }
